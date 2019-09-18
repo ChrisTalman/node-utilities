@@ -96,6 +96,18 @@ return /******/ (function(modules) { // webpackBootstrap
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/GenerateHash.ts":
+/*!*****************************!*\
+  !*** ./src/GenerateHash.ts ***!
+  \*****************************/
+/*! exports provided: generateHash */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"generateHash\", function() { return generateHash; });\n/* harmony import */ var crypto__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! crypto */ \"crypto\");\n/* harmony import */ var crypto__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(crypto__WEBPACK_IMPORTED_MODULE_0__);\n\r\n\r\nfunction generateHash({ value, algorithm, encoding }) {\r\n    const hasher = Object(crypto__WEBPACK_IMPORTED_MODULE_0__[\"createHash\"])(algorithm);\r\n    hasher.update(value);\r\n    const hash = hasher.digest(encoding);\r\n    return hash;\r\n}\r\n;\r\n\n\n//# sourceURL=webpack:///./src/GenerateHash.ts?");
+
+/***/ }),
+
 /***/ "./src/GracefulExit.ts":
 /*!*****************************!*\
   !*** ./src/GracefulExit.ts ***!
@@ -112,11 +124,11 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /*!**********************!*\
   !*** ./src/index.ts ***!
   \**********************/
-/*! exports provided: initialiseGracefulExitHandler */
+/*! exports provided: initialiseGracefulExitHandler, generateHash */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _GracefulExit__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./GracefulExit */ \"./src/GracefulExit.ts\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"initialiseGracefulExitHandler\", function() { return _GracefulExit__WEBPACK_IMPORTED_MODULE_0__[\"initialiseGracefulExitHandler\"]; });\n\n\r\n\r\n\n\n//# sourceURL=webpack:///./src/index.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _GracefulExit__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./GracefulExit */ \"./src/GracefulExit.ts\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"initialiseGracefulExitHandler\", function() { return _GracefulExit__WEBPACK_IMPORTED_MODULE_0__[\"initialiseGracefulExitHandler\"]; });\n\n/* harmony import */ var _GenerateHash__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./GenerateHash */ \"./src/GenerateHash.ts\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"generateHash\", function() { return _GenerateHash__WEBPACK_IMPORTED_MODULE_1__[\"generateHash\"]; });\n\n\r\n\r\n\r\n\n\n//# sourceURL=webpack:///./src/index.ts?");
 
 /***/ }),
 
@@ -128,6 +140,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Gra
 /***/ (function(module, exports) {
 
 eval("module.exports = require(\"@ChrisTalman/isomorphic-utilities\");\n\n//# sourceURL=webpack:///external_%22@ChrisTalman/isomorphic-utilities%22?");
+
+/***/ }),
+
+/***/ "crypto":
+/*!*************************!*\
+  !*** external "crypto" ***!
+  \*************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = require(\"crypto\");\n\n//# sourceURL=webpack:///external_%22crypto%22?");
 
 /***/ })
 
