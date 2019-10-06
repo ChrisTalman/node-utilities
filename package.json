@@ -2,9 +2,7 @@
 	"name": "@ChrisTalman/node-utilities",
 	"description": "Utility methods for the Node environment.",
 	"version": "1.0.0",
-	"license": "UNLICENSED",
 	"main": "index.js",
-	"private": true,
 	"scripts": {
 		"build": "./node_modules/.bin/webpack"
 	},
