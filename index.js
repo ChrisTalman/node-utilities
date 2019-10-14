@@ -120,15 +120,27 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 
 /***/ }),
 
+/***/ "./src/LogUnhandledErrors.ts":
+/*!***********************************!*\
+  !*** ./src/LogUnhandledErrors.ts ***!
+  \***********************************/
+/*! exports provided: listenUnhandledErrors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"listenUnhandledErrors\", function() { return listenUnhandledErrors; });\n\r\nfunction listenUnhandledErrors() {\r\n    process.on('uncaughtException', error => handleUnhandledError(error, 'exception'));\r\n    process.on('unhandledRejection', error => handleUnhandledError(error, 'rejection'));\r\n}\r\n;\r\nfunction handleUnhandledError(error, type) {\r\n    console.error('Unhandled ' + type + ':');\r\n    console.error(error);\r\n    process.exit(1);\r\n}\r\n;\r\n\n\n//# sourceURL=webpack:///./src/LogUnhandledErrors.ts?");
+
+/***/ }),
+
 /***/ "./src/index.ts":
 /*!**********************!*\
   !*** ./src/index.ts ***!
   \**********************/
-/*! exports provided: initialiseGracefulExitHandler, generateHash */
+/*! exports provided: initialiseGracefulExitHandler, generateHash, listenUnhandledErrors */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _GracefulExit__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./GracefulExit */ \"./src/GracefulExit.ts\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"initialiseGracefulExitHandler\", function() { return _GracefulExit__WEBPACK_IMPORTED_MODULE_0__[\"initialiseGracefulExitHandler\"]; });\n\n/* harmony import */ var _GenerateHash__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./GenerateHash */ \"./src/GenerateHash.ts\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"generateHash\", function() { return _GenerateHash__WEBPACK_IMPORTED_MODULE_1__[\"generateHash\"]; });\n\n\r\n\r\n\r\n\n\n//# sourceURL=webpack:///./src/index.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _GracefulExit__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./GracefulExit */ \"./src/GracefulExit.ts\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"initialiseGracefulExitHandler\", function() { return _GracefulExit__WEBPACK_IMPORTED_MODULE_0__[\"initialiseGracefulExitHandler\"]; });\n\n/* harmony import */ var _GenerateHash__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./GenerateHash */ \"./src/GenerateHash.ts\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"generateHash\", function() { return _GenerateHash__WEBPACK_IMPORTED_MODULE_1__[\"generateHash\"]; });\n\n/* harmony import */ var _LogUnhandledErrors__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./LogUnhandledErrors */ \"./src/LogUnhandledErrors.ts\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"listenUnhandledErrors\", function() { return _LogUnhandledErrors__WEBPACK_IMPORTED_MODULE_2__[\"listenUnhandledErrors\"]; });\n\n\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack:///./src/index.ts?");
 
 /***/ }),
 
