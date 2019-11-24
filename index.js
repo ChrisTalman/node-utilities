@@ -116,7 +116,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"initialiseGracefulExitHandler\", function() { return initialiseGracefulExitHandler; });\n/* harmony import */ var _ChrisTalman_isomorphic_utilities__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @ChrisTalman/isomorphic-utilities */ \"@ChrisTalman/isomorphic-utilities\");\n/* harmony import */ var _ChrisTalman_isomorphic_utilities__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_ChrisTalman_isomorphic_utilities__WEBPACK_IMPORTED_MODULE_0__);\n\r\n\r\nconst GRACEFUL_EXIT_SIGNAL = Object(_ChrisTalman_isomorphic_utilities__WEBPACK_IMPORTED_MODULE_0__[\"mirror\"])({\r\n    SIGTERM: true,\r\n    SIGINT: true\r\n});\r\nconst GRACEFUL_EXIT_SIGNALS = Object.values(GRACEFUL_EXIT_SIGNAL);\r\nfunction initialiseGracefulExitHandler(handleGracefulExit) {\r\n    for (let signal of GRACEFUL_EXIT_SIGNALS) {\r\n        process.on(signal, handleGracefulExit);\r\n    }\r\n    ;\r\n}\r\n;\r\n\n\n//# sourceURL=webpack:///./src/GracefulExit.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"initialiseGracefulExitHandler\", function() { return initialiseGracefulExitHandler; });\n/* harmony import */ var _chris_talman_isomorphic_utilities__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @chris-talman/isomorphic-utilities */ \"@chris-talman/isomorphic-utilities\");\n/* harmony import */ var _chris_talman_isomorphic_utilities__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_chris_talman_isomorphic_utilities__WEBPACK_IMPORTED_MODULE_0__);\n\r\n\r\nconst GRACEFUL_EXIT_SIGNAL = Object(_chris_talman_isomorphic_utilities__WEBPACK_IMPORTED_MODULE_0__[\"mirror\"])({\r\n    SIGTERM: true,\r\n    SIGINT: true\r\n});\r\nconst GRACEFUL_EXIT_SIGNALS = Object.values(GRACEFUL_EXIT_SIGNAL);\r\nfunction initialiseGracefulExitHandler(handleGracefulExit) {\r\n    for (let signal of GRACEFUL_EXIT_SIGNALS) {\r\n        process.on(signal, handleGracefulExit);\r\n    }\r\n    ;\r\n}\r\n;\r\n\n\n//# sourceURL=webpack:///./src/GracefulExit.ts?");
 
 /***/ }),
 
@@ -144,14 +144,14 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Gra
 
 /***/ }),
 
-/***/ "@ChrisTalman/isomorphic-utilities":
-/*!****************************************************!*\
-  !*** external "@ChrisTalman/isomorphic-utilities" ***!
-  \****************************************************/
+/***/ "@chris-talman/isomorphic-utilities":
+/*!*****************************************************!*\
+  !*** external "@chris-talman/isomorphic-utilities" ***!
+  \*****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("module.exports = require(\"@ChrisTalman/isomorphic-utilities\");\n\n//# sourceURL=webpack:///external_%22@ChrisTalman/isomorphic-utilities%22?");
+eval("module.exports = require(\"@chris-talman/isomorphic-utilities\");\n\n//# sourceURL=webpack:///external_%22@chris-talman/isomorphic-utilities%22?");
 
 /***/ }),
 

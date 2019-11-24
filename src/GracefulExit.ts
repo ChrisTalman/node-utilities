@@ -1,7 +1,7 @@
 'use strict';
 
 // External Modules
-import { mirror } from '@ChrisTalman/isomorphic-utilities';
+import { mirror } from '@chris-talman/isomorphic-utilities';
 
 // Constants
 const GRACEFUL_EXIT_SIGNAL = mirror
