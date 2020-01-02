@@ -1,7 +1,7 @@
 {
 	"name": "@chris-talman/node-utilities",
 	"description": "Utility methods for the Node environment",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"scripts": {
 		"build": "./node_modules/.bin/webpack"
 	},
