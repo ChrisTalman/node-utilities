@@ -7,7 +7,7 @@ import { createHash } from 'crypto';
 import { HexBase64Latin1Encoding as DigestEncoding } from 'crypto';
 
 /** Generates hash for value according to encoding. */
-export function generateHash({value, algorithm, encoding}: {value: string, algorithm: 'sha1' | 'sha256', encoding: DigestEncoding})
+export function generateHash({value, algorithm, encoding}: {value: string, algorithm: 'sha1' | 'sha256' | 'sha384' | 'sha512', encoding: DigestEncoding})
 {
     const hasher = createHash(algorithm);
     hasher.update(value);
