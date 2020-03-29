@@ -20,6 +20,21 @@ declare module '@chris-talman/node-utilities'
 		public decrypt(value: string): string;
 	}
 
+	/** Store for timers with method to clear all them all. */
+	export class TimerStore
+	{
+		/** Initialises instance. */
+		constructor(options?: TimerStoreOptions);
+		/** Registers timeout in store. */
+		public register(timeout: NodeJS.Timeout): void;
+		/** Clears all registered timeouts. */
+		public clear(): void;
+	}
+	export interface TimerStoreOptions
+	{
+		log?: boolean;
+	}
+
 	/** Listens to unhandled exceptions and rejections, logs them, and then exits with error code `1`. */
 	export function listenUnhandledErrors(): void;
 }
