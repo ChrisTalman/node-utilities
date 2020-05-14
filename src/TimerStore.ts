@@ -29,7 +29,7 @@ export class TimerStore
 		{
 			clearTimeout(timer);
 		};
-		this.log('Cleared timers.');
+		this.log('Cleared timers');
 	};
 	/** Emits console.log() if logging is enabled. */
 	private log(... messages: Array<any>)
